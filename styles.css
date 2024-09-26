@@ -1,55 +1,219 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 25px;
+/* styles.css */
+/* Reset styles */
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  /* Light gray background */
+  color: #333;
+  /* Dark gray text color */
   line-height: 1.6;
-  background-color: #f4f4f4;
+  /* Improve readability */
+  font-family: 'Roboto', sans-serif;
+  /* Choose a modern font */
 }
 
 header {
-  background: #0037b4;
-  color: #ffffff;
-  padding: 20px 0;
+  background-color: #fff;
+  /* White background */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  position: fixed;
+  /* Make the header sticky */
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* Ensure header stays on top */
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 0;
+  /* Remove default margin */
+  font-family: 'Poppins', sans-serif;
+  /* Different font for heading */
+  font-weight: 600;
+  color: #333;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
+nav li {
+  display: inline-block;
+  /* Make menu items horizontal */
   margin: 0 15px;
 }
 
-nav ul li a {
-  color: #ffffff;
+nav a {
   text-decoration: none;
+  color: #333;
+  /* Dark gray text color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Smooth transition for hover effect */
 }
 
-.hero {
-  padding: 50px 20px;
-  text-align: center;
-  background: #e4e4e4;
+nav a:hover {
+  color: #f44336;
+  /* Red hover color */
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #ffffff;
-  background: #0037b4;
-  text-decoration: none;
+main {
+  padding: 40px;
+  /* Padding for better content spacing */
+  margin-top: 80px;
+  /* Account for sticky header */
+}
+
+section {
+  background-color: #fff;
+  /* White background for sections */
+  padding: 30px;
+  margin-bottom: 30px;
   border-radius: 5px;
+  /* Soft rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
 }
 
 h2 {
-  color: #0037b4;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+p {
+  line-height: 1.8;
+  color: #555;
+}
+
+ul {
+  list-style: disc;
+  /* Use a disc bullet for lists */
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  /* Remove default underline */
+  color: #f44336;
+  /* Red link color */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d32f2f;
+  /* Darker red for hover effect */
 }
 
 footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 10px 0;
-  background: #0037b4;
-  color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  /* Ensure footer stays on top */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav li {
+    display: block;
+    /* Stack menu items vertically on smaller screens */
+    margin: 10px 0;
+  }
+
+  /* Adjust section padding */
+  section {
+    padding: 20px;
+  }
+
+  /* Adjust header padding */
+  header {
+    padding: 15px;
+  }
+
+  /* Adjust footer padding */
+  footer {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* styles.css (Add these styles) */
+.contact-section {
+    display: flex; /* Use flexbox for better layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Make input fields full width */
+    max-width: 400px; /* Limit the maximum width of the form */
+}
+
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px; /* Adjust height as needed */
+}
+
+button[type="submit"] {
+    background-color: #f44336; /* Red button color */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d32f2f; /* Darker red on hover */
 }
