@@ -126,8 +126,10 @@ a:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #222;
+  /* Darker gray background */
   color: #fff;
+  /* Set text color to white */
   text-align: center;
   padding: 20px;
   position: fixed;
@@ -173,47 +175,56 @@ footer {
 
 /* styles.css (Add these styles) */
 .contact-section {
-    display: flex; /* Use flexbox for better layout */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center content horizontally */
+  display: flex;
+  /* Use flexbox for better layout */
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Center content horizontally */
 }
 
 .form-group {
-    margin-bottom: 20px;
-    width: 100%; /* Make input fields full width */
-    max-width: 400px; /* Limit the maximum width of the form */
+  margin-bottom: 20px;
+  width: 100%;
+  /* Make input fields full width */
+  max-width: 400px;
+  /* Limit the maximum width of the form */
 }
 
 label {
-    display: block; /* Labels on their own line */
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  /* Labels on their own line */
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 textarea {
-    height: 120px; /* Adjust height as needed */
+  height: 120px;
+  /* Adjust height as needed */
 }
 
 button[type="submit"] {
-    background-color: #f44336; /* Red button color */
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #f44336;
+  /* Red button color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #d32f2f; /* Darker red on hover */
+  background-color: #d32f2f;
+  /* Darker red on hover */
 }
