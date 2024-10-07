@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #45a29e;
   /* Light gray background */
   color: #333;
   /* Dark gray text color */
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background-color: #000000;
   /* White background */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   /* Different font for heading */
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #45a29e;
   /* Dark gray text color */
   font-weight: bold;
   transition: color 0.3s ease;
@@ -67,12 +67,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #f44336;
+  color: #66fcfe;
   /* Red hover color */
 }
 
 main {
-  padding: 40px;
+  padding: 100px;
   /* Padding for better content spacing */
   margin-top: 80px;
   /* Account for sticky header */
@@ -81,8 +81,8 @@ main {
 section {
   background-color: #fff;
   /* White background for sections */
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 50px;
+  margin-bottom: 50px;
   border-radius: 5px;
   /* Soft rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -101,6 +101,10 @@ p {
   color: #555;
 }
 
+footer p {
+  color: #ffffff;
+}
+
 ul {
   list-style: disc;
   /* Use a disc bullet for lists */
@@ -114,18 +118,18 @@ li {
 a {
   text-decoration: none;
   /* Remove default underline */
-  color: #f44336;
+  color: #45a29e;
   /* Red link color */
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #d32f2f;
+  color: #66fcfe;
   /* Darker red for hover effect */
 }
 
 footer {
-  background-color: #222;
+  background-color: #000000;
   /* Darker gray background */
   color: #fff;
   /* Set text color to white */
@@ -213,7 +217,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #f44336;
+  background-color: #45a29e;
   /* Red button color */
   color: #fff;
   padding: 12px 20px;
@@ -224,6 +228,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #d32f2f;
+  background-color: #66fcfe;
   /* Darker red on hover */
 }
